@@ -107,4 +107,5 @@ body {
     transition: 1500ms;
     border: 1px solid #bd7502;
     filter: drop-shadow(5px 5px 10px #000000);
+    color:#ecb050 ;
 }
