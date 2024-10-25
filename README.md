@@ -22,4 +22,4 @@ The project has the following educational goals:
 - Use Vanilla JavaScript to add interactivity to the page.
 
 ## 📚 Credits
-Project developed by Pau Morillas and Didac Morillas as part of the 2024 Web Application Development course at Jesuïtes el Clot, Barcelona.
+Project developed by Pau Morillas as part of the 2024 Web Application Development course at Jesuïtes el Clot, Barcelona.
