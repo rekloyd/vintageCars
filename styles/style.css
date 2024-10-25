@@ -42,40 +42,9 @@ body {
     color: #ddd;
 }
 
-/* Estilo del burger menu */
-.burger-menu {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.burger-menu span {
-    height: 3px;
-    width: 25px;
-    background-color: #fff;
-    margin: 4px;
-    transition: 0.3s;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .navbar-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: #333;
-        padding: 10px;
-        border-radius: 8px;
-        width: 150px;
-    }
-
     .navbar-links.active {
         display: flex;
     }
 
-    .burger-menu {
-        display: flex;
-    }
-}
+
+
