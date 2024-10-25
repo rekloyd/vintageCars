@@ -7,6 +7,25 @@
     box-sizing: border-box;
 }
 
+
+@font-face {
+    font-family: 'leander';
+    src: url('../fonts/Leander.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    font-family: 'leander';
+}
+
+/* Aplica la fuente a todo el sitio */
+body {
+    font-family: 'MiFuentePersonalizada', sans-serif;
+}
+
+}
+
 body {
     font-family: Arial, sans-serif;
 }
