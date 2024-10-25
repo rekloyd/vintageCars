@@ -6,7 +6,44 @@
     <title>Hot Cars Garage</title>
 </head>
 <body>
-    <nav></nav>
+    <nav>
+        <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Responsive</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+<!-- JavaScript para el burger menu -->
+<script>
+    const burgerMenu = document.getElementById('burgerMenu');
+    const navbarLinks = document.querySelector('.navbar-links');
+
+    burgerMenu.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active');
+    });
+</script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-logo">Mi Sitio</div>
+    <ul class="navbar-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#venta">Venta</a></li>
+        <li><a href="#restauracion">Restauración</a></li>
+        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <div class="burger-menu" id="burgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    </nav>
 
     <section>
         <h1>Coches rápidos, coches buenos</h1>
