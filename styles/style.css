@@ -1,33 +1,35 @@
 /* styles.css */
 
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 @font-face {
-    font-family: 'leander';
-    src: url('../fonts/Leander.ttf');
+    font-family: 'gotica';
+    src: url('../fonts/Bokor-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
-h1{
-    font-family: 'leander';
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* Aplica la fuente a todo el sitio */
+h1 {
+    font-family: 'gotica';
+    font-size: 90px;
+    color: white;
+    padding-top: 150px;
+    filter: drop-shadow(5px 5px 17px #000000);
+}
+
 body {
-    font-family: 'MiFuentePersonalizada', sans-serif;
-}
-
-}
-
-body {
-    font-family: Arial, sans-serif;
+    font-family: 'roboto';
 }
 
 .navbar {
@@ -36,6 +38,7 @@ body {
     align-items: center;
     padding: 10px 20px;
     background-color: #333;
+    font-family: 'gotica';
 }
 
 .navbar-logo {
@@ -61,9 +64,47 @@ body {
     color: #ddd;
 }
 
-    .navbar-links.active {
-        display: flex;
-    }
+.navbar-links.active {
+    display: flex;
+}
 
+.textoHero {
+    font-size: 35px;
+}
 
+.heroSection {
+    background-image: url(../images/fondoHero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 42rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
 
+.textos {
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.botonPrincipal {
+    padding: 10px;
+    border: 1px solid #454444;
+    background-color: #454444;
+    width: 150px;
+    border-radius: 7px;
+    color: white;
+    font-family: 'gotica';
+    font-size: 18px;
+    margin-top: 30px;
+    filter: drop-shadow(5px 5px 17px #000000);
+    position: relative;
+    z-index: 2;
+}
+
+.botonPrincipal:hover {
+    background-color: black;
+    transition: 1500ms;
+    border: 1px solid #bd7502;
+    filter: drop-shadow(5px 5px 10px #000000);
+}
