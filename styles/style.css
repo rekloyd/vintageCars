@@ -108,6 +108,8 @@ h1 {
     margin: 0 auto; /* Añade esto para centrar el contenedor */
     align-items: center; /* Opcional: centrar verticalmente si hay diferentes alturas */
     padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 70px;
 }
 
 #carSectionB {
@@ -144,29 +146,36 @@ h1 {
 }
 
 .sectionC {
+    padding: 20px;
+}
+
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Define 5 columnas de igual tamaño */
-    gap: 20px; /* Espacio entre los elementos del grid */
-    padding: 20px; /* Espacio alrededor del grid */
+    grid-template-columns: 1fr; 
+    text-align: center; 
 }
 
 .sectionCHeading {
-    grid-column: 1 / 6; /* Ocupa de la columna 1 a la 5 */
-    background-color: #454444; /* Color de fondo para mejor visualización */
-    text-align: center; /* Centra el texto */
-    padding: 10px; /* Espacio alrededor del texto */
-    color: white; /* Color del texto */
+    font-family: 'gotica';
+    margin-bottom: 20px; 
+    font-size: 45px;
 }
 
-.card1{
-    grid-column: 1/2;
+.grid-elements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
-.card2{
-    grid-column: 2/3;
+.card {
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s; 
 }
 
-
-.card3{
-    grid-column: 3/4;
+.card:hover {
+    transform: scale(1.05); 
 }
