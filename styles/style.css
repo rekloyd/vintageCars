@@ -74,6 +74,11 @@ h1 {
     position: relative;
 }
 
+p[class="textoHero"] {
+    font-size: 45px;
+}
+
+
 .textos {
     text-align: center;
     color: white;
