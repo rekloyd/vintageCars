@@ -247,7 +247,11 @@ p[class="textoHero"] {
     justify-items: center;
 }
 
-.card {
+
+
+
+
+.cardIndex {
     padding: 20px; 
     max-width: 250px;
     height: 300px;
@@ -256,6 +260,7 @@ p[class="textoHero"] {
     align-items:center; 
     border-radius: 9px;
 }
+
 
 .card:hover{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); 
@@ -405,3 +410,41 @@ p[class="textoHero"] {
     font-size: 2.8rem;
     letter-spacing: 2;
 }
+
+
+
+.card {
+    padding: 20px; 
+    max-width: 250px;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-end;
+    border-radius: 9px;
+    border: 1px solid #f0efef;
+    background-color: #383838;
+}
+
+
+
+.card1 {
+    background-image: url(../images/dodge-slider.avif);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top;
+}
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 1px solid white;
+    margin-bottom:1.4rem;
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px
+}
+
+
