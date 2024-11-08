@@ -91,7 +91,7 @@ p[class="textoHero"] {
 }
 
 .botonPrincipal{
-    border: 1px solid #454444;
+    border: 1px solid #141414;
     background-color: #454444;
     width: 150px;
     border-radius: 7px;
@@ -99,7 +99,7 @@ p[class="textoHero"] {
     font-family: 'gotica';
     font-size: 18px;
     margin-top: 30px;
-    filter: drop-shadow(5px 5px 40px #bbbaba);
+    filter: drop-shadow(5px 5px 30px #1a1a1a);
 }
 
 
@@ -108,7 +108,7 @@ p[class="textoHero"] {
     background-color: black;
     transition: 2500ms;
     border: 1px solid #bd7502;
-    filter: drop-shadow(5px 5px 150px #4e4e4e);
+    filter: drop-shadow(5px 5px 50px #4e4e4e);
     color: #ecb050;
 }
 
@@ -193,7 +193,7 @@ p[class="textoHero"] {
 
 .card:hover{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); 
-    transition: 1000ms;
+    transition: 1200ms;
 }
 
 .imageCards {
@@ -204,4 +204,92 @@ p[class="textoHero"] {
 .pSectionC{
     margin-top: 20px;
 
+}
+
+
+/*FORM DE CONTACTO*/
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    align-items: start;
+    padding: 40px 0;
+}
+
+.contacto-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 3rem;
+}
+
+#formularioContacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #454444;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#formularioContacto label {
+    font-family: 'roboto';
+    font-weight: bold;
+    color: white;
+}
+
+#formularioContacto input,
+#formularioContacto select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #454444;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    outline: none;
+}
+
+#formularioContacto .botonPrincipal {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ecb050;
+    background-color: black;
+    border: 1px solid #bd7502;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#formularioContacto .botonPrincipal:hover {
+    background-color: #454444;
+    color: white;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 20px;
+    font-family: 'roboto';
+}
+
+.contact-info > h2 {
+    font-family: 'gotica';
+    font-size: 28px;
+}
+
+.contact-info img {
+    max-width: 50%;
+}
+
+.contact-info p {
+    line-height: 1.5;
+    font-size: 1.5rem;
 }
