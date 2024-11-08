@@ -99,16 +99,16 @@ p[class="textoHero"] {
     font-family: 'gotica';
     font-size: 18px;
     margin-top: 30px;
-    filter: drop-shadow(5px 5px 17px #000000);
+    filter: drop-shadow(5px 5px 40px #bbbaba);
 }
 
 
 
 .botonPrincipal:hover {
     background-color: black;
-    transition: 1500ms;
+    transition: 2500ms;
     border: 1px solid #bd7502;
-    filter: drop-shadow(5px 5px 10px #000000);
+    filter: drop-shadow(5px 5px 150px #4e4e4e);
     color: #ecb050;
 }
 
@@ -120,7 +120,7 @@ p[class="textoHero"] {
     align-items: center;
     padding-left: 100px;
     padding-top: 50px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
 }
 
 #carSectionB {
@@ -182,17 +182,13 @@ p[class="textoHero"] {
 }
 
 .card {
-    background-color: #252525; 
-    border: 1px solid #ccc; 
-    border-radius: 8px; 
     padding: 20px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s;
     max-width: 250px;
     height: 300px;
     display: flex;
     flex-direction: column;
     align-items:center; 
+    border-radius: 9px;
 }
 
 .card:hover{
@@ -203,10 +199,9 @@ p[class="textoHero"] {
 .imageCards {
     width: 50%; /* Adjusted to be 50% of the card width */
     height: auto; 
-    filter: invert(1);
 }
 
 .pSectionC{
     margin-top: 20px;
-    color: white;
+
 }
