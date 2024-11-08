@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot Cars Garage</title>
+    <!-- JavaScript de la nav -->
+    <script>
+    function toggleMenu() {
+        const navbarLinks = document.querySelector('.navbar-links');
+        navbarLinks.classList.toggle('navbar-active');
+    }
+</script>
 </head>
 <body>
     <nav>
@@ -28,8 +35,15 @@
         <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
         <li><a href="#contacto">Contacto</a></li>
     </ul>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
 
-    </nav>
+
+
 
     <section class="heroSection">
         <div class="textos">
