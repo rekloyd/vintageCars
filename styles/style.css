@@ -29,6 +29,7 @@ h1 {
     color: white;
     padding-top: 9.375rem;
     filter: drop-shadow(5px 5px 17px #000000);
+    text-align: center;
 }
 
 .navbar {
@@ -356,4 +357,16 @@ p[class="textoHero"] {
 .contact-info p {
     line-height: 1.5;
     font-size: 1.5rem;
+}
+
+
+/*Restauracion------------------*/
+
+.heroRestauracion{
+    background-image: url(../images/carHeroRestauracion.webp);
+    background-size: cover;
+    height: 39rem;
+    margin-bottom: 2rem;
+    position: relative;
+
 }
