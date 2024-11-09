@@ -56,6 +56,7 @@ h1 {
     color: #fff;
     font-size: 1.5em;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .navbar-links {
@@ -248,7 +249,9 @@ p[class="textoHero"] {
 }
 
 
-
+input:focus{
+    border: 1px solid #bd7502;
+}
 
 
 .cardIndex {
@@ -387,6 +390,7 @@ p[class="textoHero"] {
 .sectionBRestauracion{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     flex-basis: auto;
     justify-content: center;
     gap: 2rem;
@@ -408,10 +412,17 @@ p[class="textoHero"] {
 .tallerHeading{
     font-family: 'gotica';
     font-size: 2.8rem;
-    letter-spacing: 2;
+    letter-spacing: 2.5;
 }
 
-
+.cardsRestauracionContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    margin-left: 8.2rem;
+    gap: 1rem;
+}
 
 .card {
     padding: 20px; 
@@ -436,6 +447,34 @@ p[class="textoHero"] {
     background-position: top;
 }
 
+.card2 {
+    background-image: url(../images/mustangCard.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top;
+}
+
+.card3 {
+    background-image: url(../images/corvette.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top;
+}
+
+.card4 {
+    background-image: url(../images/ram1500.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top;
+}
+
+.card5 {
+    background-image: url(../images/challenger1970.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top;
+}
+
 .cardText {
     display: flex;
     flex-direction: column;
@@ -447,4 +486,12 @@ p[class="textoHero"] {
     border-radius: 6px
 }
 
+.h2Restauracion{
+    margin-left: 8.2rem;
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+    font-family: 'gotica';
+    font-size: 2.8rem;
+    letter-spacing: 2;
 
+}
