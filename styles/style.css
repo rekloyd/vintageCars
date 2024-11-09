@@ -21,7 +21,7 @@
 body {
     font-family: 'roboto';
     background-color: #f0efef;
-    padding-bottom: 1rem;
+    padding-bottom: 5rem;
 }
 
 .listaRestauracion > li{
@@ -378,13 +378,12 @@ input:focus{
 
 /*Restauracion------------------*/
 
-.heroRestauracion{
+.heroRestauracion {
     background-image: url(../images/carHeroRestauracion.webp);
     background-size: cover;
     height: 39rem;
     margin-bottom: 2rem;
     position: relative;
-
 }
 
 .sectionBRestauracion{
@@ -494,4 +493,186 @@ input:focus{
     font-size: 2.8rem;
     letter-spacing: 2;
 
+}
+
+
+.sectionDRestauracion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+
+}
+
+.preguntasFrecuentes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.preguntasFrecuentes h2{
+    font-size: 2.8rem;
+}
+
+
+@media (max-width: 768px) {
+    .preguntasFrecuentes {
+        width: 80%;
+    }
+    
+    .preguntasFrecuentes h2 {
+        font-size: 2.2rem;
+    }
+
+    .preguntasFrecuentes .faq {
+        padding: 15px;
+    }
+
+    .pregunta {
+        font-size: 18px;
+    }
+
+    .respuestaFaq {
+        font-size: 14px;
+    }
+
+    .iconoCruz {
+        width: 3%;
+        top: 15px;
+        right: 15px; 
+    }
+}
+
+@media (max-width: 390px) {
+    .preguntasFrecuentes {
+        width: 90%;
+        padding: 0 10px; 
+    }
+
+    .preguntasFrecuentes h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .preguntasFrecuentes .faq {
+        width: 100%;
+        padding: 10px; 
+        gap: 1rem;
+    }
+
+    .pregunta {
+        font-size: 16px; 
+    }
+
+    .respuestaFaq {
+        font-size: 14px; 
+    }
+
+    .iconoCruz {
+        width: 100%;
+        height: auto;
+        top: 10px; 
+        right: 10px; 
+        transform: scale(2); /* Escalamos el icono */
+    }
+}
+
+.iconoCruz{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 2.5%;
+    transform: rotate(44deg);
+    transition: 500ms;
+}
+
+.iconoCruz:hover{
+    cursor: pointer;
+}
+
+.iconoCruz-cerrar{
+    transform: rotate(0deg);
+    transition: 500ms;
+}
+
+.preguntasFrecuentes .faq{
+    position: relative;
+    margin-bottom: 1px;
+    padding: 20px;
+    padding-right: 40px;
+    width: 100%;
+    background-color: #e2e1e1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 9px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.pregunta{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.respuestaFaq {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+.respuestaFaq-active {
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    opacity: 1;
+    max-height: 500px; 
+    font-size: 16px;
+}
+
+.h2Faq{
+    margin-bottom: 2rem;
+}
+
+
+/*MEDIA QUERY PARA EL RESPONSIVE*/
+
+
+
+.heroRestauracion {
+    background-image: url(../images/carHeroRestauracion.webp);
+    background-size: cover;
+    height: 39rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+/* Móviles (pantallas pequeñas) */
+@media (max-width: 767px) {
+    .heroRestauracion {
+        height: 25rem; /* Ajusta la altura para pantallas más pequeñas */
+    }
+}
+
+/* Tablets (iPads y dispositivos con pantallas medianas) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .heroRestauracion {
+        height: 30rem; /* Ajusta la altura para tablets */
+    }
+}
+
+/* Portátiles (pantallas grandes, generalmente de 1024px a 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .heroRestauracion {
+        height: 35rem; /* Ajusta la altura para portátiles */
+    }
+}
+
+/* Pantallas grandes (para escritorios, opcional si necesitas algo más específico) */
+@media (min-width: 1367px) {
+    .heroRestauracion {
+        height: 39rem; /* Establece la altura original para pantallas grandes */
+    }
 }

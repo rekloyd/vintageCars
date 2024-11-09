@@ -7,10 +7,22 @@
     <!-- JavaScript de la nav -->
     <script>
     function toggleMenu() {
-        const navbarLinks = document.querySelector('.navbar-links');
+        let navbarLinks = document.querySelector('.navbar-links');
         navbarLinks.classList.toggle('navbar-active');
     }
-</script>
+    function toggleFaq(element) {
+    //Para evitar que solo se abra y cierre el primero
+    let faqContainer = element.closest('.faq');
+    
+
+    let iconoFaq = faqContainer.querySelector('.iconoCruz');
+    let textoFaq = faqContainer.querySelector('.respuestaFaq');
+    
+    iconoFaq.classList.toggle('iconoCruz-cerrar');
+    textoFaq.classList.toggle('respuestaFaq-active');
+}
+
+    </script>
 </head>
 <body>
     <nav>
@@ -84,16 +96,16 @@
 
     <div class="card card4">
         <div class="cardText">
-            <h3>Ram 1500TRX 1960</h3>
+            <h3 style="text-align: center;">Chevrolet Corvette 1990</h3>
         </div>
-        <p style="color:white;margin-bottom: 2rem; text-align: center;">Restauración completa y vendido en Barcelona.</p>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">Cambio de motor completo y restaurado.</p>
     </div>
 
     <div class="card card5">
         <div class="cardText">
-            <h3 style="text-align: center;">Dodge Challenger 1970</h3>
+            <h3 style="text-align: center;">Chevrolet Corvette 1990</h3>
         </div>
-        <p style="color:white;margin-bottom: 2rem; text-align: center;">Tapizado y reemplazo de piezas.</p>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">Cambio de motor completo y restaurado.</p>
     </div>
 
 
@@ -101,14 +113,64 @@
 </section>
 
 <section class="sectionDRestauracion">
-    <h2 class="tallerHeading">Preguntas Frecuentes</h2>
+    <h2 class="tallerHeading h2Faq">Preguntas Frecuentes</h2>
 
-    <div class="faq1"></div>
-    <div class="faq1"></div>
-    <div class="faq1"></div>
-    <div class="faq1"></div>
+    <div class="preguntasFrecuentes">
+        <div class="faq">
+        <span class="pregunta">¿Cuánto tardamos en restaurar un coche?</span>
+            <img src="./images/logoX.png" alt="icono x para cerrar el faq" class="iconoCruz" onclick="toggleFaq(this)">
+            <span class="respuestaFaq">La restauración depende del trabajo a hacer con el coche y si tienes el coche en España. Para autos en territorio español el plazo máximo es de 2 meses y en el caso de tener que importarlo el plazo sube a los 6-9 meses</span>
+        </div>
+        <div class="faq">
+            <span class="pregunta">¿Qué coste total tiene la restauración?</span>
+                <img src="./images/logoX.png" alt="icono x para cerrar el faq" class="iconoCruz" onclick="toggleFaq(this)">
+                <span class="respuestaFaq">El coste de mano de obra de nuestro taller es de 80€ la hora. El resto dependerá del tipo de trabajo a realizar y de las piezas que tengamos que pedir.</span>
+        </div>
+        <div class="faq">
+            <span class="pregunta">¿Cuánto tardamos en restaurar un coche?</span>
+                <img src="./images/logoX.png" alt="icono x para cerrar el faq" class="iconoCruz" onclick="toggleFaq(this)">
+                <span class="respuestaFaq">La restauración depende del trabajo a hacer con el coche y si tienes el coche en España. Para autos en territorio español el plazo máximo es de 2 meses y en el caso de tener que importarlo el plazo sube a los 6-9 meses</span>
+        </div>
+
+    </div>
 
 </section>
+
+
+<section class="contact-wrapper">
+    <div class="contacto-container">
+        <form action="#" id="formularioContacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telefono">Teléfono de contacto:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            
+            <label for="interes">Interés:</label>
+            <select id="interes" name="interes" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="comprar">Comprar</option>
+                <option value="restaurar">Restaurar</option>
+                <option value="tramitar">Tramitar documentación</option>
+            </select>
+            <button type="submit" class="botonPrincipal" style="letter-spacing: 2;">Enviar Mensaje</button>
+        </form>
+    </div>
+
+    <div class="contact-info">
+        <h2 style="font-size: 4rem;">Donde nos puedes visitar:</h2>
+        <img src="./images/logoHero.png" alt="logo de la empresa" class="logoImgContacto">
+        <p>Hot Car Garage el Clot <br> Carrer València 438, bajos A <br> hotcarsclot@gmail.com <br> 635219876</p>
+    </div>
+</section>
+
+<footer></footer>
 
     
 </body>
