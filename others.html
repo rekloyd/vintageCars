@@ -39,17 +39,17 @@
 
 <!-- Navbar -->
 <nav class="navbar">
-    <div class="navbar-logo" onclick="location.href='./index.html'">Hot Cars Garage</div>
+    <div class="navbar-logo" onclick="location.href='./index.html'"><p>Hot Cars Garage</p></div>
     <ul class="navbar-links">
         <li><a href="./index.html">Inicio</a></li>
         <li class="marcasMenu">
             <a href="./venta.html">Marcas</a>
             <ul class="dropdown">
-                <li><a href="#ford">Ford</a></li>
-                <li><a href="#pontiac">Pontiac</a></li>
-                <li><a href="#dodge">Dodge</a></li>
-                <li><a href="#ac">AC</a></li>
-                <li><a href="#cadillac">Cadillac</a></li>
+                <li><a href="./ford.html">Ford</a></li>
+                <li><a href="./pontiac.html">Pontiac</a></li>
+                <li><a href="./dodge.hml">Dodge</a></li>
+                <li><a href="./others.html">Otras marcas</a></li>
+
             </ul>
         </li>
         <li><a href="./restauración.html">Restaurar</a></li>
@@ -61,89 +61,94 @@
         <span></span>
     </div>
 </nav>
-
-<section>
-    
+<section class="heroVenta">
+    <h1 id="ventaH1">Nuestros coches a la venta</h1>
 </section>
-
-
-<section class="sectionBRestauracion">
-    <img src="./images/retaurando-coche.jpg" alt="persona en el taller restaurando un coche" class="imgTaller">
-    <div class="tallerContent">
-    <h2 class="tallerHeading">Coches importados 100% Americanos</h2>
-    <p style="line-height: 1.55;">Importamos el material de la casa oficial, restauramos y cambiamos las piezas necesarias para que puedan circular por toda la UE.Seleccionamos el modelo que necesites y nos encargamos de todo el proceso. Nuestro equipo te contactará cuando tu coche esté listo.</p>
-    <h2 style="font-family: gotica;">Talleres especialistas en Muscle Cars Vintage:</h2>
-    <ul class="listaRestauracion">
-        <li>🡺 Restauramos coches clásicos. Somos especialistas en coches americanos</li>
-        <li>🡺 En menos de 6 meses tendrás tu coche listo para quemar rueda.</li>
-        <li>🡺 Garantía de 1 año desde la entrega de las llaves.</li>
-        <li>🡺 Enviamos tu coche a cualquier lugar de España</li>
-    </ul>
-    </div>
-</section>
-
 <section class="sectionCRestauracion">
-    <h2 class="h2Restauracion">Ultimas restauraciones</h2>
+    <h2 class="h2Restauracion">Todos nuestros coches</h2>
     <div class="cardsRestauracionContainer">
     <div class="card card1">
         <div class="cardText">
             <h3>Dodge Charger 1965</h3>
         </div>
-        <p style="color:white;margin-bottom: 2rem; text-align: center;">Restauración completa y enviado a Huelva.</p>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">45.600€</p>
     </div>
     <div class="card card2">
         <div class="cardText">
             <h3>Ford Mustang 1989</h3>
         </div>
-        <p style="color:white;margin-bottom: 2rem; text-align: center;">Restauración de chapa y pintura.</p>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">29.900€</p>
     </div>
     <div class="card card3">
         <div class="cardText">
             <h3 style="text-align: center;">Chevrolet Corvette 1990</h3>
         </div>
-        <p style="color:white;margin-bottom: 2rem; text-align: center;">Cambio de motor completo y restaurado.</p>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">35.900€</p>
     </div>
 
     <div class="card card4">
         <div class="cardText">
             <h3 style="text-align: center;">RAM 1000 1965</h3>
         </div>
-        <p style="color:white;margin-bottom: 2rem; text-align: center;">Cambio de motor completo y restaurado.</p>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">22.700€.</p>
     </div>
 
     <div class="card card5">
         <div class="cardText">
             <h3 style="text-align: center;">Dodge Challenger 1970</h3>
         </div>
-        <p style="color:white;margin-bottom: 2rem; text-align: center;">Cambio de motor completo y restaurado.</p>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">60.500€</p>
     </div>
 
-
-    </div>
-</section>
-
-<section class="sectionDRestauracion">
-    <h2 class="tallerHeading h2Faq">Preguntas Frecuentes</h2>
-
-    <div class="preguntasFrecuentes">
-        <div class="faq">
-        <span class="pregunta">¿Cuánto tardamos en restaurar un coche?</span>
-            <img src="./images/logoX.png" alt="icono x para cerrar el faq" class="iconoCruz" onclick="toggleFaq(this)">
-            <span class="respuestaFaq">La restauración depende del trabajo a hacer con el coche y si tienes el coche en España. Para autos en territorio español el plazo máximo es de 2 meses y en el caso de tener que importarlo el plazo sube a los 6-9 meses</span>
+    <div class="card card6">
+        <div class="cardText">
+            <h3 style="text-align: center;">Ford Bronco 1970</h3>
         </div>
-        <div class="faq">
-            <span class="pregunta">¿Qué coste total tiene la restauración?</span>
-                <img src="./images/logoX.png" alt="icono x para cerrar el faq" class="iconoCruz" onclick="toggleFaq(this)">
-                <span class="respuestaFaq">El coste de mano de obra de nuestro taller es de 80€ la hora. El resto dependerá del tipo de trabajo a realizar y de las piezas que tengamos que pedir.</span>
-        </div>
-        <div class="faq">
-            <span class="pregunta">¿Cuánto tardamos en restaurar un coche?</span>
-                <img src="./images/logoX.png" alt="icono x para cerrar el faq" class="iconoCruz" onclick="toggleFaq(this)">
-                <span class="respuestaFaq">La restauración depende del trabajo a hacer con el coche y si tienes el coche en España. Para autos en territorio español el plazo máximo es de 2 meses y en el caso de tener que importarlo el plazo sube a los 6-9 meses</span>
-        </div>
-
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">89.499€</p>
     </div>
 
+    <div class="card card7">
+        <div class="cardText">
+            <h3 style="text-align: center;">AC Cobra 1964</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">90.500€</p>
+    </div>
+
+    <div class="card card8">
+        <div class="cardText">
+            <h3 style="text-align: center;">Pontiac Boneville 1958</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">72.600€</p>
+    </div>
+
+    <div class="card card9">
+        <div class="cardText">
+            <h3 style="text-align: center;">Cadillac Eldorado 1957</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">40.500€</p>
+    </div>
+
+    <div class="card card10">
+        <div class="cardText">
+            <h3 style="text-align: center;">Pontiac Fiero 1989 </h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">10.500€</p>
+    </div>
+
+    <div class="card card11">
+        <div class="cardText">
+            <h3 style="text-align: center;">Pontiac Firebird 1974</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">30.500€</p>
+    </div>
+
+    <div class="card card12">
+        <div class="cardText">
+            <h3 style="text-align: center;">Ford Mustang gt 2007</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">38.500€</p>
+    </div>
+    </div>
 </section>
 
 
