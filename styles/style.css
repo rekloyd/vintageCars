@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 @font-face {
     font-family: 'gotica';
     src: url('../fonts/Bokor-Regular.ttf');
@@ -225,6 +226,10 @@ p[class="textoHero"] {
     }
 }
 
+.h2Footer{
+    font-size: 4rem;
+}
+
 
 .sectionC {
     padding: 20px;
@@ -385,6 +390,7 @@ input:focus{
     margin-bottom: 2rem;
     position: relative;
 }
+
 
 .sectionBRestauracion{
     display: flex;
@@ -638,41 +644,98 @@ input:focus{
 
 
 /*MEDIA QUERY PARA EL RESPONSIVE*/
-
-
-
-.heroRestauracion {
-    background-image: url(../images/carHeroRestauracion.webp);
-    background-size: cover;
-    height: 39rem;
-    margin-bottom: 2rem;
-    position: relative;
-}
-
-/* Móviles (pantallas pequeñas) */
+/* Móviles*/
 @media (max-width: 767px) {
     .heroRestauracion {
-        height: 25rem; /* Ajusta la altura para pantallas más pequeñas */
+        height: 20rem;
+    }
+    h1 {
+        font-size: 3rem;
+        padding-top: 4rem;
+
+    }
+    .h2faq{
+        font-size: 1rem;
+
+    }
+    p[class="textoHero"] {
+        font-size: 30px;
+    }
+
+    .sectionBRestauracion{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tallerContent{
+        width: 80%;
+        margin-left: 2rem;
+    }
+
+    .imgTaller{
+        display: none;
+    }
+
+    .h2Restauracion{
+        margin-left: 2rem;
+    
+    }
+
+    .h2Footer{
+        font-size: 1rem;
+    }
+
+    .cardsRestauracionContainer{
+        margin-left: 2rem;
+        gap: 1rem;
     }
 }
 
-/* Tablets (iPads y dispositivos con pantallas medianas) */
+/* Tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
     .heroRestauracion {
-        height: 30rem; /* Ajusta la altura para tablets */
+        height: 20rem; /* Ajusta la altura para tablets */
     }
+    h1 {
+        font-size: 3rem;
+        padding-top: 3rem;
+
+    }
+    p[class="textoHero"] {
+        font-size: 30px;
+    }
+
+    .sectionBRestauracion{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .tallerContent{
+        width: 80%;
+        margin-left: 5rem;
+    }
+
+    .imgTaller{
+        display: none;
+    }
+
+    .h2Restauracion{
+        margin-left: 5rem;
+    
+    }
+
+    .cardsRestauracionContainer{
+        margin-left: 5rem;
+        gap: 1rem;
+    }
+    
 }
 
-/* Portátiles (pantallas grandes, generalmente de 1024px a 1366px) */
+/* Portátiles (pantallas grandes, generalmente de 1024px a 1366px)
 @media (min-width: 1024px) and (max-width: 1366px) {
     .heroRestauracion {
-        height: 35rem; /* Ajusta la altura para portátiles */
+        height: 35rem;
     }
 }
-
-/* Pantallas grandes (para escritorios, opcional si necesitas algo más específico) */
-@media (min-width: 1367px) {
-    .heroRestauracion {
-        height: 39rem; /* Establece la altura original para pantallas grandes */
-    }
-}
+     */
