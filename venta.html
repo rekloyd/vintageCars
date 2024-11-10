@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Cars Garage</title>
+    <!-- JavaScript de la nav -->
+    <script>
+    function toggleMenu() {
+        let navbarLinks = document.querySelector('.navbar-links');
+        navbarLinks.classList.toggle('navbar-active');
+    }
+    function toggleFaq(element) {
+    //Para evitar que solo se abra y cierre el primero
+    let faqContainer = element.closest('.faq');
+    
+
+    let iconoFaq = faqContainer.querySelector('.iconoCruz');
+    let textoFaq = faqContainer.querySelector('.respuestaFaq');
+    
+    iconoFaq.classList.toggle('iconoCruz-cerrar');
+    textoFaq.classList.toggle('respuestaFaq-active');
+}
+
+    </script>
+</head>
+<body>
+    <nav>
+        <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Responsive</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-logo" onclick="location.href='./index.html'">Hot Cars Garage</div>
+    <ul class="navbar-links">
+        <li><a href="./index.html">Inicio</a></li>
+        <li class="marcasMenu">
+            <a href="#venta">Marcas</a>
+            <ul class="dropdown">
+                <li><a href="#ford">Ford</a></li>
+                <li><a href="#pontiac">Pontiac</a></li>
+                <li><a href="#dodge">Dodge</a></li>
+                <li><a href="#ac">AC</a></li>
+                <li><a href="#cadillac">Cadillac</a></li>
+            </ul>
+        </li>
+        <li><a href="./restauración.html">Restaurar</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+    </ul>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+<section class="heroVenta">
+    <h1 id="ventaH1">Nuestros coches a la venta</h1>
+</section>
+
+
+<section class="sectionCRestauracion">
+    <h2 class="h2Restauracion">Todos nuestros coches</h2>
+    <div class="cardsRestauracionContainer">
+    <div class="card card1">
+        <div class="cardText">
+            <h3>Dodge Charger 1965</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">45.600€</p>
+    </div>
+    <div class="card card2">
+        <div class="cardText">
+            <h3>Ford Mustang 1989</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">29.900€</p>
+    </div>
+    <div class="card card3">
+        <div class="cardText">
+            <h3 style="text-align: center;">Chevrolet Corvette 1990</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">35.900€</p>
+    </div>
+
+    <div class="card card4">
+        <div class="cardText">
+            <h3 style="text-align: center;">RAM 1000 1965</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">22.700€.</p>
+    </div>
+
+    <div class="card card5">
+        <div class="cardText">
+            <h3 style="text-align: center;">Dodge Challenger 1970</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">60.500€</p>
+    </div>
+
+    <div class="card card6">
+        <div class="cardText">
+            <h3 style="text-align: center;">Ford Bronco 1970</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">89.499€</p>
+    </div>
+
+    <div class="card card7">
+        <div class="cardText">
+            <h3 style="text-align: center;">AC Cobra 1964</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">90.500€</p>
+    </div>
+
+    <div class="card card8">
+        <div class="cardText">
+            <h3 style="text-align: center;">Pontiac Boneville 1958</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">72.600€</p>
+    </div>
+
+    <div class="card card9">
+        <div class="cardText">
+            <h3 style="text-align: center;">Cadillac Eldorado 1957</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">40.500€</p>
+    </div>
+
+    <div class="card card10">
+        <div class="cardText">
+            <h3 style="text-align: center;">Pontiac Fiero 1989 </h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">10.500€</p>
+    </div>
+
+    <div class="card card11">
+        <div class="cardText">
+            <h3 style="text-align: center;">Pontiac Firebird 1974</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">30.500€</p>
+    </div>
+
+    <div class="card card12">
+        <div class="cardText">
+            <h3 style="text-align: center;">Ford Mustang gt 2007</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">38.500€</p>
+    </div>
+    </div>
+</section>
+
+
+<!--FORD COCHES-->
+
+<section class="sectionCRestauracion">
+    <h2 class="h2Restauracion">Coches Ford</h2>
+    <div class="cardsRestauracionContainer">
+    
+    <div class="card card2">
+        <div class="cardText">
+            <h3>Ford Mustang 1989</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">29.900€</p>
+    </div>
+
+    <div class="card card6">
+        <div class="cardText">
+            <h3 style="text-align: center;">Ford Bronco 1970</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">89.499€</p>
+    </div>
+
+    <div class="card card12">
+        <div class="cardText">
+            <h3 style="text-align: center;">Ford Mustang gt 2007</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">38.500€</p>
+    </div>
+    </div>
+</section>
+
+<!--PONTIAC COCHES-->
+
+<section class="sectionCRestauracion">
+    <h2 class="h2Restauracion">Coches Pontiac</h2>
+    <div class="cardsRestauracionContainer">
+
+
+    <div class="card card8">
+        <div class="cardText">
+            <h3 style="text-align: center;">Pontiac Boneville 1958</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">72.600€</p>
+    </div>
+
+
+    <div class="card card10">
+        <div class="cardText">
+            <h3 style="text-align: center;">Pontiac Fiero 1989 </h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">10.500€</p>
+    </div>
+
+    <div class="card card11">
+        <div class="cardText">
+            <h3 style="text-align: center;">Pontiac Firebird 1974</h3>
+        </div>
+        <p style="color:white;margin-bottom: 2rem; text-align: center;">30.500€</p>
+    </div>
+
+
+
+
+<section class="sectionDRestauracion">
+    <h2 class="tallerHeading h2Faq">Preguntas Frecuentes</h2>
+
+    <div class="preguntasFrecuentes">
+        <div class="faq">
+        <span class="pregunta">¿Puedo probar el coche?</span>
+            <img src="./images/logoX.png" alt="icono x para cerrar el faq" class="iconoCruz" onclick="toggleFaq(this)">
+            <span class="respuestaFaq">Todos los adultos con carnet B y más de 25 años pueden solicitar una prueba de conducción. Es necesario una cita previa y una paga y señal que será devuelta al usuario al acabar la prueba.</span>
+        </div>
+        <div class="faq">
+            <span class="pregunta">¿Los coches tienen garantía?</span>
+                <img src="./images/logoX.png" alt="icono x para cerrar el faq" class="iconoCruz" onclick="toggleFaq(this)">
+                <span class="respuestaFaq">Todos nuestros coches tienen 1 año de garantía o 25.000km. Para la devolución el coche no debe haber sufrido ningún daño o desperfecto a causa de terceros o del propio conductor. Solo cubre defectos causados por la restauración.</span>
+        </div>
+        <div class="faq">
+            <span class="pregunta">¿Se pueden financiar?</span>
+                <img src="./images/logoX.png" alt="icono x para cerrar el faq" class="iconoCruz" onclick="toggleFaq(this)">
+                <span class="respuestaFaq">Tenemos diferentes opciones de financiación con o sin entrada. El agente comercial te explicará todas las opciones una vez llegues al taller y hagas la pre reserva de uno de nuestros coches.</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="contact-wrapper">
+    <div class="contacto-container">
+        <form action="#" id="formularioContacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telefono">Teléfono de contacto:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            
+            <label for="interes">Interés:</label>
+            <select id="interes" name="interes" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="comprar">Comprar</option>
+                <option value="restaurar">Restaurar</option>
+                <option value="tramitar">Tramitar documentación</option>
+            </select>
+            <button type="submit" class="botonPrincipal" style="letter-spacing: 2;">Enviar Mensaje</button>
+        </form>
+    </div>
+
+    <div class="contact-info">
+        <h2 style="font-size: 4rem;">Donde nos puedes visitar:</h2>
+        <img src="./images/logoHero.png" alt="logo de la empresa" class="logoImgContacto">
+        <p>Hot Car Garage el Clot <br> Carrer València 438, bajos A <br> hotcarsclot@gmail.com <br> 635219876</p>
+    </div>
+</section>
+
+<footer></footer>
+
+    
+</body>
+</html>

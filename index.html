@@ -27,12 +27,20 @@
 
 <!-- Navbar -->
 <nav class="navbar">
-    <div class="navbar-logo">Hot Cars Garage</div>
+    <div class="navbar-logo" onclick="location.href='./index.html'">Hot Cars Garage</div>
     <ul class="navbar-links">
         <li><a href="./index.html">Inicio</a></li>
-        <li><a href="./venta.html">Marcas</a></li>
+        <li class="marcasMenu">
+            <a href="#venta">Marcas</a>
+            <ul class="dropdown">
+                <li><a href="#ford">Ford</a></li>
+                <li><a href="#pontiac">Pontiac</a></li>
+                <li><a href="#dodge">Dodge</a></li>
+                <li><a href="#ac">AC</a></li>
+                <li><a href="#cadillac">Cadillac</a></li>
+            </ul>
+        </li>
         <li><a href="./restauración.html">Restaurar</a></li>
-        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
         <li><a href="./contacto.html">Contacto</a></li>
     </ul>
     <div class="hamburger-menu" onclick="toggleMenu()">
@@ -41,6 +49,9 @@
         <span></span>
     </div>
 </nav>
+<section class="heroVenta">
+    <h1 id="ventaH1">Nuestros coches a la venta</h1>
+</section>
 
     <section class="heroSection">
         <div class="textos">
@@ -54,7 +65,6 @@
         <div class="containerTexto">
         <h2 class="tituloSecundario">Coches listos para darle gas</h2>
         <p id="parrafoSectionB">Importamos y restauramos coches americanos desde 1970. Nos encargamos de todos los trámites. Tú solo te encargas de darle gas. Consulta nuestro catálodo de coches restaurados o rellena el formulario con el coche que buscas</p>
-        <button id="botonSectionB">Ver coches</button>
         </div>
         <div class="sectionB">
             <div class="carSection">
@@ -71,22 +81,22 @@
                 <div class="cardIndex">
                     <img src="./images/busqueda-de-lupa.png" alt="icono de lupa" class="imageCards">
                     <p class="pSectionC">Seleccionamos los coches en las mejores condiciones</p>
-                    <button class="botonPrincipal">Catálogo</button>
+
                 </div>
                 <div class="cardIndex">
                     <img src="./images/barco.png" alt="icono de un barco" class="imageCards">
                     <p class="pSectionC">Importamos los coches desde América</p>
-                    <button class="botonPrincipal">Importa un vehículo</button>
+
                 </div>
                 <div class="cardIndex">
                     <img src="./images/papeles.png" alt="icono de unos papeles" class="imageCards">
                     <p class="pSectionC">Tramitamos el papeleo para que puedan circular</p>
-                    <button class="botonPrincipal">Tramitar</button>
+
                 </div>
                 <div class="cardIndex">
                     <img src="./images/llave.png" alt="llaves" class="imageCards">
                     <p class="pSectionC">Restauración y venta del vehículo</p>
-                    <button class="botonPrincipal">Encarga tu vehículo</button>
+
                 </div>
             </div>
         </div>
